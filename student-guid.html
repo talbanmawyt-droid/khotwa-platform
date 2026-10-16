@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102b4e">
+<title>منصة الموجّه الطلابي | عبدالله عبدالرحمن الشمري</title>
+<style>
+:root{--navy:#102b4e;--navy2:#173d65;--blue:#1677b8;--teal:#148b83;--gold:#d8ad56;--bg:#f3f6fa;--paper:#fff;--ink:#1d2c3d;--muted:#687789;--line:#dce4ec;--red:#b54747;--green:#21815d;--shadow:0 10px 28px #102b4e0d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.65}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;padding:20px max(16px,calc((100% - 1280px)/2));border-bottom:4px solid var(--gold)}.toprow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:13px}.logo{height:56px;width:56px;border:1px solid #ffffff40;background:#ffffff14;border-radius:16px;display:grid;place-items:center;font-size:30px}.brand h1{font-size:clamp(20px,3vw,29px);margin:0}.brand p{margin:2px 0;color:#dce8f4;font-size:13px}.topactions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:7px}.btn.primary{background:var(--blue);color:white}.btn.light{background:#ffffff16;border:1px solid #ffffff55;color:white}.btn.soft{background:#eaf1f7;color:#24425f}.btn.gold{background:var(--gold);color:#192d44}.btn.danger{background:#fff0ef;color:#a62b2b}.btn.green{background:var(--green);color:#fff}.btn.sm{padding:6px 9px;font-size:12px}.yearpick{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:12px;font-weight:800;color:#fff}.yearpick select,.yearpick input{border:1px solid #ffffff66;border-radius:8px;padding:7px 9px;background:#fff;color:#193a59;max-width:150px}.evidence-link{display:inline-block;margin:2px 4px 2px 0;padding:4px 7px;border-radius:7px;background:#eaf4ff;color:#155a91;text-decoration:none;font-size:11px}.modalback{position:fixed;inset:0;background:#0b1f35a8;display:grid;place-items:center;padding:18px;z-index:50}.modal{background:#fff;border-radius:17px;padding:20px;width:min(780px,100%);max-height:90vh;overflow:auto;box-shadow:0 25px 70px #0003}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.modal-head h3{margin:0;color:var(--navy)}.modal-close{border:0;background:#eef2f6;border-radius:8px;padding:7px 11px}.results-table{width:100%;min-width:0}.results-table th,.results-table td{font-size:12px}.wrap{max-width:1280px;margin:22px auto;padding:0 16px}.hero{background:linear-gradient(110deg,#e8f2fb,#fff);border:1px solid #d6e4f0;border-radius:18px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:18px}.hero h2{margin:0 0 4px;font-size:clamp(20px,3vw,27px);color:var(--navy)}.hero p{margin:0;color:#5c6e81}.badge{display:inline-flex;align-items:center;gap:6px;background:#e6f4f1;color:#146b62;border-radius:999px;padding:6px 11px;font-size:12px;font-weight:800}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.stat{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:15px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px}.stat .ico{font-size:25px;width:46px;height:46px;border-radius:13px;background:#eaf3fb;display:grid;place-items:center}.stat .n{font-size:25px;font-weight:850;color:var(--navy);line-height:1.2}.stat small{color:var(--muted)}.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:17px;align-items:start}.side{background:#fff;border:1px solid var(--line);border-radius:17px;padding:12px;position:sticky;top:12px;box-shadow:var(--shadow)}.sidehead{font-size:12px;color:var(--muted);font-weight:800;padding:8px 10px}.nav{width:100%;display:flex;align-items:center;gap:10px;text-align:right;border:0;background:transparent;color:#344a60;padding:11px 12px;border-radius:11px;margin:2px 0;font-weight:700}.nav .ni{font-size:19px;width:25px;text-align:center}.nav.active{background:#e9f3fb;color:#104b7b;box-shadow:inset -3px 0 var(--blue)}.nav:hover{background:#f0f5f9}.main{min-width:0}.section{display:none}.section.active{display:block}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:19px;margin-bottom:16px;box-shadow:var(--shadow);min-width:0}.cardhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}.cardhead h3{margin:0;font-size:19px;color:var(--navy)}.muted{font-size:13px;color:var(--muted)}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;min-width:0}.field label{font-size:13px;font-weight:800;color:#364b60}.field input,.field select,.field textarea{width:100%;border:1px solid #ccd7e2;border-radius:10px;background:#fff;padding:10px 11px;outline:none;color:var(--ink);min-width:0}.field textarea{min-height:90px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1677b81a}.formactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:700px;background:#fff}th,td{padding:11px 12px;text-align:right;border-bottom:1px solid #e8edf2;vertical-align:top;font-size:13px}th{background:#eef4f9;color:#264560;font-weight:850;white-space:nowrap}tbody tr:hover{background:#fbfdff}td .actions{display:flex;gap:5px;flex-wrap:wrap}.empty{padding:25px;text-align:center;color:var(--muted);border:1px dashed #c8d4df;border-radius:12px}.notice{padding:12px 14px;border-radius:11px;font-size:13px;margin:12px 0}.notice.info{background:#eaf4ff;border:1px solid #cde3fa;color:#174a77}.notice.warn{background:#fff5de;border:1px solid #f0dfad;color:#795300}.notice.ok{background:#e8f7ef;border:1px solid #c0e6d0;color:#155d41}.notice.error{background:#fff0ef;border:1px solid #f3cfcb;color:#922a23}.searchrow{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:12px}.searchrow input,.searchrow select{border:1px solid #ccd7e2;border-radius:10px;padding:9px 11px;background:white;flex:1;min-width:140px}.weekgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.week{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff}.weektop{padding:11px 12px;display:flex;align-items:center;gap:9px;background:#f2f7fb}.wn{height:34px;min-width:34px;padding:0 6px;border-radius:9px;background:#d9eefa;color:#104b7b;display:grid;place-items:center;font-weight:900}.weektop h4{margin:0;font-size:14px}.weekbody{padding:12px}.weekbody p{font-size:12px;margin:0 0 8px;color:#53667a}.weekbody .field{margin-bottom:7px}.weekbody .field label{font-size:11px}.weekbody input,.weekbody select{padding:7px;font-size:12px}.week.done{border-color:#8bc7ae}.week.done .wn{background:#d9f3e5;color:#176044}.value-icon{font-size:20px}.mini{font-size:11px;color:var(--muted)}.check{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700}.check input{width:auto}.footer{text-align:center;color:#758397;font-size:12px;padding:22px}.modalback{position:fixed;inset:0;background:#0b1f35a8;display:grid;place-items:center;padding:18px;z-index:50}.modal{background:white;border-radius:17px;padding:22px;width:min(520px,100%);max-height:90vh;overflow:auto}.modal h3{margin-top:0}.close{float:left;border:0;border-radius:8px;background:#eef2f6;padding:5px 10px}.print-only{display:none}
+@media(max-width:960px){.layout{grid-template-columns:1fr}.side{position:static;display:flex;gap:5px;overflow:auto;padding:8px}.sidehead{display:none}.nav{min-width:max-content;width:auto;padding:9px 11px}.nav .nt{display:inline}.stats{grid-template-columns:repeat(2,1fr)}.weekgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.top{padding:15px}.wrap{padding:0 10px;margin:13px auto}.brand{align-items:flex-start}.logo{width:46px;height:46px}.topactions{width:100%}.topactions .btn{flex:1;font-size:12px}.hero{padding:16px}.stats{gap:8px}.stat{padding:10px;gap:8px}.stat .ico{width:36px;height:36px;font-size:20px}.stat .n{font-size:21px}.stat small{font-size:11px}.card{padding:14px}.grid2,.grid3{grid-template-columns:1fr}.weekgrid{grid-template-columns:1fr}.cardhead h3{font-size:17px}.formactions .btn{flex:1}}
+@media print{body{background:#fff}.top{background:#fff;color:#000;border-bottom:2px solid #999;padding:10px}.brand p{color:#333}.topactions,.side,.hero .badge,.formactions,.searchrow,.btn,.notice{display:none!important}.wrap{max-width:none;padding:0;margin:0}.layout{display:block}.card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}.section{display:none!important}.section.active{display:block!important}.print-only{display:block}.tablewrap{overflow:visible}table{min-width:0}th,td{font-size:10px;padding:6px}.footer{display:none}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="toprow">
+  <div class="brand"><div class="logo">🧭</div><div><h1>منصة الموجّه الطلابي</h1><p>مجمع عدي بن حاتم الطائي بعذفاء · إدارة التعليم بمنطقة الجوف</p><p><strong>إعداد ومتابعة: الموجّه الطلابي عبدالله عبدالرحمن الشمري</strong></p></div></div>
+  <div class="topactions"><label class="yearpick">📚 العام الدراسي <select id="academicYear" aria-label="اختيار العام الدراسي"><option value="1447هـ">1447هـ</option><option value="1448هـ" selected>1448هـ</option><option value="1449هـ">1449هـ</option><option value="1450هـ">1450هـ</option><option value="1451هـ">1451هـ</option><option value="custom">عام آخر…</option></select><input id="customYear" type="text" placeholder="اكتب العام الدراسي" maxlength="30" hidden></label><button class="btn light" id="backupBtn">⬇ نسخة احتياطية</button><button class="btn light" id="restoreBtn">⬆ استعادة نسخة</button><button class="btn gold" id="printBtn">🖨 طباعة / PDF</button><input id="restoreFile" type="file" accept=".json,application/json" hidden></div>
+ </div>
+</header>
+<div class="wrap">
+ <div class="hero"><div><h2>لوحة المتابعة والإرشاد الطلابي</h2><p>توثيق المواقف اليومية، والتواصل مع الأسرة، والبرامج الإرشادية، والأنشطة والاجتماعات في مكان واحد.</p></div><span class="badge" id="heroYearBadge">📚 العام الدراسي 1448هـ</span></div>
+ <div class="stats">
+  <div class="stat"><div class="ico">🚨</div><div><div class="n" id="countInc">0</div><small>المواقف الطارئة</small></div></div>
+  <div class="stat"><div class="ico">👨‍👩‍👧</div><div><div class="n" id="countParents">0</div><small>تواصل أولياء الأمور</small></div></div>
+  <div class="stat"><div class="ico">🧑‍🏫</div><div><div class="n" id="countGuidance">0</div><small>جلسات التوجيه</small></div></div>
+  <div class="stat"><div class="ico">📋</div><div><div class="n" id="countActions">0</div><small>البرامج والاجتماعات</small></div></div>
+ </div>
+ <div class="notice warn">🔐 <strong>خصوصية البيانات:</strong> هذه النسخة تحفظ السجلات في هذا المتصفح وعلى هذا الجهاز فقط. استخدم «نسخة احتياطية» بانتظام. لا تنتقل البيانات تلقائيًا إلى جهاز آخر ولا تُرفع إلى خادم سحابي.</div>
+ <div class="layout">
+  <aside class="side">
+   <div class="sidehead">أقسام المنصة</div>
+   <button class="nav active" data-section="dashboard"><span class="ni">🏠</span><span class="nt">الرئيسية</span></button>
+   <button class="nav" data-section="incidents"><span class="ni">🚨</span><span class="nt">المواقف الطارئة</span></button>
+   <button class="nav" data-section="parents"><span class="ni">👨‍👩‍👧</span><span class="nt">تواصل أولياء الأمور</span></button>
+   <button class="nav" data-section="weekly"><span class="ni">🗓️</span><span class="nt">الأنشطة الأسبوعية</span></button>
+   <button class="nav" data-section="guidance"><span class="ni">🧑‍🏫</span><span class="nt">التوجيه الفردي والجمعي</span></button>
+   <button class="nav" data-section="programs"><span class="ni">🎯</span><span class="nt">البرامج والإجراءات</span></button>
+   <button class="nav" data-section="meetings"><span class="ni">🤝</span><span class="nt">الاجتماعات واللجان</span></button>
+   <button class="nav" data-section="radio"><span class="ni">🎙️</span><span class="nt">الإذاعة المدرسية</span></button>
+   <button class="nav" data-section="attendance"><span class="ni">📅</span><span class="nt">متابعة الغياب والسلوك</span></button>
+   <button class="nav" data-section="support"><span class="ni">🧩</span><span class="nt">حصر الطلاب وفئات الدعم</span></button>
+   <button class="nav" data-section="surveys"><span class="ni">📋</span><span class="nt">الاستبيانات وقياس الأثر</span></button>
+   <button class="nav" data-section="reports"><span class="ni">📊</span><span class="nt">التقارير والسجلات</span></button>
+  </aside>
+  <main class="main">
+   <section class="section active" id="sec-dashboard">
+    <div class="card"><div class="cardhead"><h3>مرحبًا بك في منصة المتابعة</h3><span class="badge">🧭 الموجّه الطلابي</span></div>
+     <div class="grid2">
+      <div class="notice info"><strong>🚨 المواقف الطارئة</strong><br>وثّق الموقف، وبيانات الطالب، والإجراء الإرشادي الذي تم اتخاذه.</div>
+      <div class="notice info"><strong>👨‍👩‍👧 التواصل الأسري</strong><br>سجّل الزيارات والاتصالات ورسائل الواتساب ونتائج التواصل.</div>
+      <div class="notice info"><strong>🗓️ خطة القيم الأسبوعية</strong><br>تابع القيم الـ18 من الصورة المرفقة، وأضف تاريخ التنفيذ والشواهد.</div>
+      <div class="notice info"><strong>📋 البرامج واللجان</strong><br>سجّل البرامج المنفذة واجتماعات المجلس الطلابي واللجان المدرسية.</div>
+      <div class="notice info"><strong>🎙️ الإذاعة المدرسية</strong><br>توثيق موضوع الإذاعة وتاريخها وفقراتها والطلاب المشاركين والشواهد.</div>
+      <div class="notice info"><strong>📅 متابعة الغياب والسلوك</strong><br>رصد الطلاب كثيري الغياب أو ذوي السلوكيات المتكررة وخطة المتابعة والتواصل الأسري.</div>
+      <div class="notice info"><strong>🧩 حصر الطلاب وفئات الدعم</strong><br>حصر الموهوبين وذوي الاحتياج التعليمي أو الاجتماعي أو الصحي، وتوثيق خطة الدعم والمتابعة بسرية.</div>
+     </div>
+    </div>
+    <div class="card"><div class="cardhead"><h3>آخر السجلات المضافة</h3><button class="btn soft sm" onclick="go('reports')">عرض كل السجلات ←</button></div><div id="recentList" class="empty">لا توجد سجلات بعد. ابدأ من أحد الأقسام.</div></div>
+   </section>
+
+   <section class="section" id="sec-incidents">
+    <div class="card"><div class="cardhead"><h3>🚨 رصد المواقف اليومية الطارئة</h3><span class="muted">توثيق الموقف والتعامل وفق إجراءات التوجيه الطلابي</span></div>
+     <form id="incidentForm"><input type="hidden" id="incidentId">
+      <div class="grid3">
+       <div class="field"><label>اسم الطالب *</label><input id="incStudent" required maxlength="150" placeholder="اسم الطالب"></div>
+       <div class="field"><label>الصف *</label><input id="incClass" required maxlength="80" placeholder="مثال: السادس الابتدائي"></div>
+       <div class="field"><label>اليوم</label><input id="incDay" readonly placeholder="يُحدد من التاريخ"></div>
+       <div class="field"><label>التاريخ *</label><input id="incDate" type="date" required></div>
+       <div class="field"><label>نوع الموقف</label><select id="incType"><option>سلوكي</option><option>انفعالي / نفسي</option><option>تأخر أو غياب</option><option>نزاع بين الطلاب</option><option>صحي أو سلامة</option><option>تحصيلي</option><option>أسري</option><option>أخرى</option></select></div>
+       <div class="field"><label>درجة الأولوية</label><select id="incPriority"><option>عادية</option><option>متوسطة</option><option>عاجلة</option></select></div>
+      </div>
+      <div class="field"><label>الموقف الذي حصل *</label><textarea id="incDetails" required placeholder="وصف موضوعي مختصر لما حدث، دون أحكام أو معلومات غير لازمة"></textarea></div>
+      <div class="field"><label>التعامل وفق إجراءات الموجّه الطلابي *</label><textarea id="incAction" required placeholder="الإجراء المتخذ، التواصل مع المعنيين، الإحالة عند الحاجة، والمتابعة"></textarea></div>
+      <div class="field"><label>نتيجة الإجراء / المتابعة</label><textarea id="incOutcome" placeholder="نتيجة المعالجة وما يلزم متابعته"></textarea></div><div class="field"><label>📎 إرفاق شاهد (ملف أو صورة من الاستديو)</label><input id="incidentFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><small class="muted">حتى 3 ملفات. تُحفظ على هذا الجهاز؛ الصور تُضغط لتقليل الحجم.</small><div id="incidentEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ الموقف</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div>
+    <div class="card"><div class="cardhead"><h3>سجل المواقف</h3></div><div id="incidentTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-parents">
+    <div class="card"><div class="cardhead"><h3>👨‍👩‍👧 زيارات وتواصل أولياء الأمور</h3></div>
+     <form id="parentForm"><input type="hidden" id="parentId">
+      <div class="grid3">
+       <div class="field"><label>اسم ولي الأمر *</label><input id="parName" required maxlength="150"></div>
+       <div class="field"><label>اسم الطالب *</label><input id="parStudent" required maxlength="150"></div>
+       <div class="field"><label>الصف</label><input id="parClass" maxlength="80"></div>
+       <div class="field"><label>نوع التواصل *</label><select id="parMethod"><option>زيارة للمدرسة</option><option>اتصال هاتفي</option><option>واتساب</option><option>رسالة نصية</option><option>اجتماع عن بُعد</option><option>أخرى</option></select></div>
+       <div class="field"><label>التاريخ *</label><input id="parDate" type="date" required></div>
+       <div class="field"><label>اليوم</label><input id="parDay" readonly></div>
+       <div class="field"><label>وقت التواصل</label><input id="parTime" type="time"></div>
+       <div class="field"><label>سبب التواصل *</label><input id="parReason" required maxlength="250" placeholder="سبب الزيارة أو الاتصال"></div>
+       <div class="field"><label>حالة المتابعة</label><select id="parStatus"><option>تم التواصل</option><option>بانتظار الرد</option><option>يتطلب متابعة</option><option>أُغلق الموضوع</option></select></div>
+      </div>
+      <div class="field"><label>ملخص التواصل والإجراءات المتفق عليها</label><textarea id="parNotes"></textarea></div><div class="field"><label>📎 إرفاق شاهد (ملف أو صورة من الاستديو)</label><input id="parentFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><div id="parentEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ التواصل</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div>
+    <div class="card"><div class="cardhead"><h3>سجل التواصل مع الأسرة</h3></div><div id="parentTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-weekly">
+    <div class="card"><div class="cardhead"><h3>🗓️ خطة القيم والأنشطة الأسبوعية</h3><span class="badge" id="weeklyYearBadge">18 قيمة · العام 1448هـ</span></div>
+     <p class="muted">تم نقل أسماء القيم من الصورة المرفقة. أدخل تاريخ الأسبوع وتاريخ التنفيذ والشواهد، ثم علّم النشاط بأنه نُفذ.</p>
+     <div class="notice info">يمكن تعديل تواريخ التنفيذ حسب التقويم المدرسي المعتمد. أسماء القيم محفوظة وفق ترتيب الصورة.</div>
+     <div class="weekgrid" id="weekGrid"></div>
+     <div class="formactions"><button class="btn primary" id="saveWeeks">💾 حفظ خطة الأسابيع</button><button class="btn soft" id="resetWeeks">إعادة ضبط حالة التنفيذ</button><button class="btn soft" id="exportWeeks">⬇ تصدير خطة القيم CSV</button></div>
+    </div>
+   </section>
+
+   <section class="section" id="sec-guidance">
+    <div class="card"><div class="cardhead"><h3>🧑‍🏫 التوجيه الفردي أو الجمعي</h3></div>
+     <form id="guidanceForm"><input type="hidden" id="guideId">
+      <div class="grid3">
+       <div class="field"><label>نوع التوجيه *</label><select id="guideType"><option value="فردي">👤 توجيه فردي</option><option value="جمعي">👥 توجيه جمعي</option></select></div>
+       <div class="field"><label>اسم الطالب / الطلاب *</label><input id="guideStudents" required maxlength="500" placeholder="اسم الطالب أو أسماء الطلاب"></div>
+       <div class="field"><label>الصف / الفئة</label><input id="guideClass" maxlength="100" placeholder="الصف أو المجموعة"></div>
+       <div class="field"><label>سبب التوجيه *</label><input id="guideReason" required maxlength="300" placeholder="سبب التوجيه أو الحاجة الإرشادية"></div>
+       <div class="field"><label>التاريخ *</label><input id="guideDate" type="date" required></div>
+       <div class="field"><label>اليوم</label><input id="guideDay" readonly></div>
+       <div class="field"><label>الوقت</label><input id="guideTime" type="time"></div>
+       <div class="field"><label>مدة الجلسة بالدقائق</label><input id="guideDuration" type="number" min="0" max="600"></div>
+       <div class="field"><label>حالة المتابعة</label><select id="guideStatus"><option>تم</option><option>يتطلب متابعة</option><option>إحالة</option><option>مجدول</option></select></div>
+      </div>
+      <div class="field"><label>ملخص التوجيه والإجراء المتخذ</label><textarea id="guideAction" placeholder="أهداف الجلسة، الأساليب، التوصيات، والمتابعة"></textarea></div><div class="field"><label>📎 إرفاق شاهد (ملف أو صورة من الاستديو)</label><input id="guidanceFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><div id="guidanceEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ التوجيه</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div><div class="card"><div class="cardhead"><h3>سجل التوجيه الفردي والجمعي</h3></div><div id="guidanceTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-programs">
+    <div class="card"><div class="cardhead"><h3>🎯 رصد البرامج والأنشطة والإجراءات المنفذة</h3></div>
+     <form id="programForm"><input type="hidden" id="programId">
+      <div class="grid3">
+       <div class="field"><label>اسم البرنامج / النشاط *</label><input id="progName" required maxlength="200" placeholder="اسم البرنامج"></div>
+       <div class="field"><label>نوع الإجراء</label><select id="progType"><option>برنامج إرشادي</option><option>نشاط توعوي</option><option>إذاعة مدرسية</option><option>ورشة عمل</option><option>مبادرة</option><option>متابعة حالة</option><option>شراكة أسرية</option><option>أخرى</option></select></div>
+       <div class="field"><label>الفئة المستهدفة</label><select id="progAudience"><option>الطلاب</option><option>المعلمون</option><option>أولياء الأمور</option><option>المجتمع المدرسي</option><option>فئة محددة</option></select></div>
+       <div class="field"><label>تاريخ التنفيذ *</label><input id="progDate" type="date" required></div>
+       <div class="field"><label>اليوم</label><input id="progDay" readonly></div>
+       <div class="field"><label>عدد المستفيدين</label><input id="progBeneficiaries" type="number" min="0"></div>
+       <div class="field"><label>الحالة</label><select id="progStatus"><option>تم التنفيذ</option><option>قيد التنفيذ</option><option>مجدول</option></select></div>
+       <div class="field"><label>الشواهد / رابط الملف</label><input id="progEvidence" maxlength="500" placeholder="اسم ملف أو رابط إن وجد"></div><div class="field"><label>📎 إرفاق شاهد من الملفات أو الصور</label><input id="programFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><div id="programEvidenceCurrent" class="muted"></div></div>
+       <div class="field"><label>المنفذ / الشركاء</label><input id="progOwner" maxlength="200"></div>
+      </div>
+      <div class="field"><label>وصف مختصر والنتائج</label><textarea id="progNotes"></textarea></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ البرنامج</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div><div class="card"><div class="cardhead"><h3>سجل البرامج والإجراءات</h3></div><div id="programTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-meetings">
+    <div class="card"><div class="cardhead"><h3>🤝 اجتماعات المجلس الطلابي واللجان</h3></div>
+     <form id="meetingForm"><input type="hidden" id="meetingId">
+      <div class="grid3">
+       <div class="field"><label>المجلس / اللجنة *</label><select id="meetCommittee"><option>المجلس الطلابي</option><option>لجنة التوجيه الطلابي</option><option>لجنة السلوك الإيجابي</option><option>لجنة التحصيل الدراسي</option><option>لجنة أخرى</option></select></div>
+       <div class="field"><label>عنوان الاجتماع *</label><input id="meetTitle" required maxlength="220" placeholder="موضوع الاجتماع"></div>
+       <div class="field"><label>رقم الاجتماع</label><input id="meetNumber" maxlength="30" placeholder="مثال: 1"></div>
+       <div class="field"><label>التاريخ *</label><input id="meetDate" type="date" required></div>
+       <div class="field"><label>اليوم</label><input id="meetDay" readonly></div>
+       <div class="field"><label>وقت البداية *</label><input id="meetTime" type="time" required></div>
+       <div class="field"><label>وقت النهاية</label><input id="meetEndTime" type="time"></div>
+       <div class="field"><label>مكان الاجتماع</label><input id="meetPlace" maxlength="150" placeholder="مكتب التوجيه الطلابي"></div>
+       <div class="field"><label>رئيس الاجتماع</label><input id="meetChair" maxlength="150"></div>
+      </div>
+      <div class="field"><label>الحضور</label><textarea id="meetAttendees" placeholder="أسماء الحضور أو صفاتهم"></textarea></div>
+      <div class="field"><label>محاور الاجتماع والقرارات والتوصيات *</label><textarea id="meetNotes" required placeholder="اكتب المحاور والقرارات والمسؤول عن التنفيذ والموعد المتوقع"></textarea></div>
+      <div class="field"><label>موعد المتابعة</label><input id="meetFollowup" type="date"></div><div class="field"><label>📎 إرفاق محضر أو شاهد (ملف / صورة)</label><input id="meetingFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><div id="meetingEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ الاجتماع</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div><div class="card"><div class="cardhead"><h3>سجل الاجتماعات واللجان</h3></div><div id="meetingTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-radio">
+    <div class="card"><div class="cardhead"><h3>🎙️ سجل الإذاعة المدرسية</h3><span class="muted">توثيق الموضوع والفقرات والمشاركين والشواهد</span></div>
+     <form id="radioForm"><input type="hidden" id="radioId">
+      <div class="grid3">
+       <div class="field"><label>موضوع الإذاعة *</label><input id="radioTitle" required maxlength="220" placeholder="مثال: قيمة الانضباط"></div>
+       <div class="field"><label>المناسبة / القيمة</label><input id="radioTheme" maxlength="160" placeholder="قيمة أو مناسبة مدرسية"></div>
+       <div class="field"><label>التاريخ *</label><input id="radioDate" type="date" required></div>
+       <div class="field"><label>اليوم</label><input id="radioDay" readonly></div>
+       <div class="field"><label>الطلاب المشاركون</label><input id="radioStudents" maxlength="500" placeholder="أسماء الطلاب أو الصف"></div>
+       <div class="field"><label>الصف / الفئة</label><input id="radioClass" maxlength="100"></div>
+       <div class="field"><label>المشرف / المنفذ</label><input id="radioPresenter" maxlength="160" placeholder="اسم المنفذ أو المعلم المشرف"></div>
+       <div class="field"><label>مدة الإذاعة بالدقائق</label><input id="radioDuration" type="number" min="0" max="120"></div>
+       <div class="field"><label>الحالة</label><select id="radioStatus"><option>تم التنفيذ</option><option>مجدولة</option><option>تحتاج استكمال</option></select></div>
+      </div>
+      <div class="field"><label>الفقرات / محاور الإذاعة *</label><textarea id="radioSegments" required placeholder="القرآن الكريم، الحديث الشريف، كلمة الصباح، فقرة حوارية، سؤال وجواب..."></textarea></div>
+      <div class="field"><label>الأثر والملاحظات</label><textarea id="radioNotes" placeholder="تفاعل الطلاب، الرسائل التوعوية، التوصيات..."></textarea></div>
+      <div class="field"><label>📎 إرفاق شاهد (صورة أو ملف)</label><input id="radioFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><small class="muted">يمكن إرفاق حتى 3 ملفات صغيرة؛ تحفظ محليًا على هذا الجهاز.</small><div id="radioEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ الإذاعة</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div>
+    <div class="card"><div class="cardhead"><h3>سجل الإذاعات المدرسية</h3></div><div id="radioTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-attendance">
+    <div class="card"><div class="cardhead"><h3>📅 متابعة الطلاب كثيري الغياب أو السلوك المتكرر</h3><span class="muted">سجل متابعة تربوي وخطة تدخل</span></div>
+     <div class="notice info">سجّل الوقائع بصورة موضوعية، مع توثيق التواصل والإجراءات وفق الأنظمة والتعليمات المدرسية، ومراعاة خصوصية الطالب.</div>
+     <form id="attendanceForm"><input type="hidden" id="followId">
+      <div class="grid3">
+       <div class="field"><label>اسم الطالب *</label><input id="followStudent" required maxlength="160"></div>
+       <div class="field"><label>الصف *</label><input id="followClass" required maxlength="100"></div>
+       <div class="field"><label>نوع المتابعة *</label><select id="followType"><option>كثرة الغياب</option><option>تكرار التأخر الصباحي</option><option>سلوك غير ملائم متكرر</option><option>غياب وسلوك</option><option>تراجع دراسي مرتبط بالغياب</option></select></div>
+       <div class="field"><label>من تاريخ *</label><input id="followStartDate" type="date" required></div>
+       <div class="field"><label>إلى تاريخ</label><input id="followEndDate" type="date"></div>
+       <div class="field"><label>اليوم (حسب تاريخ البداية)</label><input id="followDay" readonly></div>
+       <div class="field"><label>عدد أيام الغياب</label><input id="followAbsences" type="number" min="0" step="1"></div>
+       <div class="field"><label>عدد مرات السلوك / التأخر</label><input id="followIncidents" type="number" min="0" step="1"></div>
+       <div class="field"><label>حالة المتابعة</label><select id="followStatus"><option>متابعة أولية</option><option>تم التواصل مع ولي الأمر</option><option>خطة متابعة قائمة</option><option>تحسن ملحوظ</option><option>إحالة وفق الإجراء المعتمد</option><option>أُغلقت المتابعة</option></select></div>
+       <div class="field"><label>تاريخ المراجعة القادمة</label><input id="followReviewDate" type="date"></div>
+       <div class="field"><label>وسيلة التواصل مع الأسرة</label><select id="followContact"><option>لم يتم بعد</option><option>زيارة</option><option>اتصال هاتفي</option><option>واتساب</option><option>رسالة نصية</option><option>اجتماع</option></select></div>
+       <div class="field"><label>أولوية المتابعة</label><select id="followPriority"><option>عادية</option><option>متوسطة</option><option>عاجلة</option></select></div>
+      </div>
+      <div class="field"><label>ملخص الوقائع وأسباب المتابعة *</label><textarea id="followReason" required placeholder="اكتب الوقائع والتواريخ ذات الصلة بشكل موضوعي"></textarea></div>
+      <div class="field"><label>الإجراءات والخطة الإرشادية *</label><textarea id="followPlan" required placeholder="الإجراءات المنفذة، الدعم المقدم، التنسيق مع الأسرة والمعلمين، وموعد المتابعة"></textarea></div>
+      <div class="field"><label>نتيجة المتابعة / التوصيات</label><textarea id="followOutcome" placeholder="مؤشرات التحسن أو الخطوات اللاحقة"></textarea></div>
+      <div class="field"><label>📎 إرفاق شاهد أو مستند متابعة</label><input id="attendanceFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><small class="muted">أرفق المستندات الضرورية فقط، وتجنب مشاركة بيانات حساسة غير لازمة.</small><div id="attendanceEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ متابعة الطالب</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div>
+    <div class="card"><div class="cardhead"><h3>سجل متابعة الغياب والسلوك</h3></div><div id="attendanceTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-support">
+    <div class="card"><div class="cardhead"><h3>🧩 حصر الطلاب وفئات الدعم والمتابعة</h3><span class="badge">سجل إرشادي سري</span></div>
+     <div class="notice warn">🔒 يحتوي هذا القسم على بيانات حساسة تخص الطلاب. سجّل الحد الأدنى اللازم فقط، ولا تكتب تفاصيل قضائية أو تشخيصات طبية غير ضرورية. احتفظ بالملف على جهاز آمن، ولا تشارك النسخ الاحتياطية إلا مع المخولين وفق أنظمة المدرسة.</div>
+     <form id="supportForm"><input type="hidden" id="supportId">
+      <div class="grid3">
+       <div class="field"><label>اسم الطالب *</label><input id="supportStudent" required maxlength="160" autocomplete="off"></div>
+       <div class="field"><label>الصف *</label><input id="supportClass" required maxlength="100"></div>
+       <div class="field"><label>فئة الحصر / الدعم *</label><select id="supportCategory" required><option value="">اختر الفئة</option><option>طالب موهوب</option><option>ضعف تحصيلي / احتياج تعليمي</option><option>يتيم</option><option>ظرف أسري: سجن ولي الأمر</option><option>انفصال أسري</option><option>طالب ذو إعاقة</option><option>حالة صحية تستلزم مراعاة مدرسية</option><option>أكثر من فئة / دعم متعدد</option><option>فئة دعم أخرى</option></select></div>
+       <div class="field"><label>تاريخ الحصر *</label><input id="supportDate" type="date" required></div>
+       <div class="field"><label>اليوم</label><input id="supportDay" readonly></div>
+       <div class="field"><label>مستوى أولوية المتابعة</label><select id="supportPriority"><option>عادية</option><option>متوسطة</option><option>عالية</option><option>عاجلة</option></select></div>
+       <div class="field"><label>مصدر المعلومة / الإحالة</label><select id="supportSource"><option>ملاحظة مدرسية</option><option>ولي الأمر</option><option>المعلم</option><option>لجنة التوجيه الطلابي</option><option>الطالب</option><option>جهة مختصة / تقرير معتمد</option><option>أخرى</option></select></div>
+       <div class="field"><label>حالة المتابعة</label><select id="supportStatus"><option>تم الحصر</option><option>تحت الدراسة</option><option>خطة دعم قائمة</option><option>تم التنسيق مع الأسرة</option><option>إحالة / تنسيق مع جهة مختصة</option><option>تحتاج مراجعة</option><option>أُغلقت المتابعة</option></select></div>
+       <div class="field"><label>موعد المراجعة القادمة</label><input id="supportReviewDate" type="date"></div>
+      </div>
+      <div class="field"><label>الاحتياج أو نقاط القوة اللازمة للدعم *</label><textarea id="supportNeed" required placeholder="اكتب وصفًا مختصرًا وموضوعيًا يساعد على تقديم الدعم، وتجنب التفاصيل الحساسة غير الضرورية"></textarea></div>
+      <div class="field"><label>خطة الدعم والإجراءات المتخذة *</label><textarea id="supportPlan" required placeholder="مثل: إثراء للموهوب، خطة علاجية تعليمية، تيسيرات مدرسية، متابعة إرشادية أو تنسيق مع الأسرة"></textarea></div>
+      <div class="grid2">
+       <div class="field"><label>التنسيق مع الأسرة / الجهة المعنية</label><textarea id="supportCoordination" placeholder="تاريخ وطريقة التواصل والخطوات المتفق عليها، دون تفاصيل غير لازمة"></textarea></div>
+       <div class="field"><label>نتيجة المتابعة والملاحظات</label><textarea id="supportOutcome" placeholder="مؤشرات التحسن أو ما يحتاج إلى متابعة لاحقة"></textarea></div>
+      </div>
+      <div class="field"><label>📎 شاهد أو مستند داعم (اختياري)</label><input id="supportFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><small class="muted">حتى 3 ملفات صغيرة. أرفق فقط ما يلزم، ولا ترفق تقارير صحية أو وثائق أسرية تفصيلية ما لم يكن ذلك ضروريًا ومصرحًا به.</small><div id="supportEvidenceCurrent" class="muted"></div></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ سجل الدعم</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div>
+    <div class="card"><div class="cardhead"><h3>📊 إجمالي الطلاب حسب فئة الحصر</h3><span class="muted">يتحدث تلقائيًا عند الحفظ أو التعديل أو الحذف</span></div><div id="supportStats" class="grid3"></div></div>
+    <div class="card"><div class="cardhead"><h3>سجل حصر الطلاب وفئات الدعم</h3><span class="muted">يُعرض على هذا الجهاز فقط</span></div><div class="searchrow"><input id="supportSearch" placeholder="🔎 ابحث باسم الطالب أو الصف"><select id="supportFilter"><option value="all">كل الفئات</option><option>طالب موهوب</option><option>ضعف تحصيلي / احتياج تعليمي</option><option>يتيم</option><option>ظرف أسري: سجن ولي الأمر</option><option>انفصال أسري</option><option>طالب ذو إعاقة</option><option>حالة صحية تستلزم مراعاة مدرسية</option><option>أكثر من فئة / دعم متعدد</option><option>فئة دعم أخرى</option></select></div><div id="supportTable"></div></div>
+   </section>
+
+   <section class="section" id="sec-surveys">
+    <div class="card"><div class="cardhead"><h3>📋 إنشاء استبيان وقياس رضا المستفيدين</h3><span class="badge">قياس الأثر الإرشادي</span></div>
+     <div class="notice warn">تُحفظ الاستبيانات والردود في هذا المتصفح فقط في هذه النسخة. لن تصل الردود من أجهزة الآخرين تلقائيًا؛ المشاركة المركزية تحتاج إلى قاعدة بيانات سحابية.</div>
+     <form id="surveyForm"><input type="hidden" id="surveyId">
+      <div class="grid3">
+       <div class="field"><label>عنوان الاستبيان *</label><input id="surveyTitle" required maxlength="180" placeholder="مثال: قياس رضا الطلاب عن البرنامج"></div>
+       <div class="field"><label>الفئة المستهدفة *</label><select id="surveyAudience"><option>الطلاب</option><option>المعلمون</option><option>أولياء الأمور</option><option>المجتمع المدرسي</option></select></div>
+       <div class="field"><label>نوع الاستبيان</label><select id="surveyMode"><option value="anonymous">مجهول الهوية</option><option value="named">بالاسم</option></select></div>
+       <div class="field"><label>تاريخ النشر / الإعداد *</label><input id="surveyDate" type="date" required></div>
+       <div class="field"><label>مرتبط ببرنامج (اختياري)</label><input id="surveyProgram" maxlength="180" placeholder="اسم البرنامج أو المبادرة"></div>
+       <div class="field"><label>حالة الاستبيان</label><select id="surveyStatus"><option>مسودة</option><option>مفتوح</option><option>مغلق</option></select></div>
+      </div>
+      <div class="field"><label>هدف الاستبيان *</label><textarea id="surveyGoal" required placeholder="ما الذي تريد قياسه؟ رضا، معرفة، سلوك، أو احتياج..."></textarea></div>
+      <div class="field"><label>الأسئلة (اكتب كل سؤال في سطر مستقل) *</label><textarea id="surveyQuestions" required placeholder="وضوح أهداف البرنامج\nمدى الاستفادة من البرنامج\nمقترحات للتحسين"></textarea></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ الاستبيان</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+    </div>
+    <div class="card"><div class="cardhead"><h3>🗳️ الاستبيانات والردود</h3><button class="btn soft sm" id="exportSurveyCsv">⬇ تصدير الاستبيانات والردود CSV</button></div><div id="surveyList"></div></div>
+    <div class="card"><div class="cardhead"><h3>📈 قياس أثر البرنامج قبل التنفيذ وبعده</h3></div>
+     <p class="muted">سجّل خط الأساس قبل البرنامج ثم نتيجة القياس بعد التنفيذ، وحدد المؤشر المستهدف. تُحسب نسبة التغير تلقائيًا عند توفر قيمة قبلية غير صفرية.</p>
+     <form id="impactForm"><input type="hidden" id="impactId">
+      <div class="grid3">
+       <div class="field"><label>اسم البرنامج / المبادرة *</label><input id="impactProgram" required maxlength="180" placeholder="اسم البرنامج"></div>
+       <div class="field"><label>مؤشر قياس الأثر *</label><input id="impactIndicator" required maxlength="180" placeholder="مثال: نسبة الالتزام بالحضور"></div>
+       <div class="field"><label>وحدة القياس</label><select id="impactUnit"><option value="%">نسبة مئوية %</option><option value="عدد">عدد</option><option value="درجة">درجة</option><option value="مستوى">مستوى</option><option value="أخرى">أخرى</option></select></div>
+       <div class="field"><label>القياس القبلي *</label><input id="impactBefore" type="number" step="any" required></div>
+       <div class="field"><label>المستهدف *</label><input id="impactTarget" type="number" step="any" required></div>
+       <div class="field"><label>القياس البعدي *</label><input id="impactAfter" type="number" step="any" required></div>
+       <div class="field"><label>تاريخ القياس القبلي *</label><input id="impactBeforeDate" type="date" required></div>
+       <div class="field"><label>تاريخ القياس البعدي *</label><input id="impactAfterDate" type="date" required></div>
+       <div class="field"><label>عدد المستفيدين</label><input id="impactCount" type="number" min="0"></div>
+      </div>
+      <div class="field"><label>مصدر البيانات / الشواهد</label><input id="impactEvidence" maxlength="500" placeholder="استبيان، سجل حضور، مقياس قبلي وبعدي..."></div><div class="field"><label>📎 إرفاق شاهد لقياس الأثر</label><input id="impactFormEvidenceFiles" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><div id="impactEvidenceCurrent" class="muted"></div></div>
+      <div class="field"><label>تحليل النتائج والتوصيات *</label><textarea id="impactNotes" required placeholder="ما الذي تغير؟ هل تحقق المستهدف؟ ما الخطوة التالية؟"></textarea></div>
+      <div class="formactions"><button class="btn primary" type="submit">💾 حفظ قياس الأثر</button><button class="btn soft" type="reset">تفريغ الحقول</button></div>
+     </form>
+     <div id="impactTable" style="margin-top:15px"></div>
+    </div>
+   </section>
+
+   <section class="section" id="sec-reports">
+    <div class="card"><div class="cardhead"><h3>📊 التقارير والسجلات</h3><div class="formactions"><button class="btn gold" id="printReportsBtn" type="button">🖨 طباعة / حفظ PDF</button><button class="btn soft" id="exportReportsPdfHelp" type="button">ℹ️ طريقة PDF</button></div></div>
+     <p class="print-only" id="printReportHeading">مجمع عدي بن حاتم الطائي بعذفاء · تقارير الموجّه الطلابي · العام الدراسي 1448هـ</p><div class="searchrow"><input id="searchAll" placeholder="🔎 ابحث في السجلات (اسم، موضوع، تاريخ...)"><select id="filterType"><option value="all">كل أنواع السجلات</option><option value="incidents">المواقف الطارئة</option><option value="parents">تواصل أولياء الأمور</option><option value="guidance">التوجيه</option><option value="programs">البرامج والإجراءات</option><option value="meetings">الاجتماعات</option><option value="radio">الإذاعة المدرسية</option><option value="attendance">متابعة الغياب والسلوك</option><option value="support">حصر الطلاب وفئات الدعم</option><option value="impacts">قياس الأثر</option><option value="surveys">الاستبيانات والردود</option></select></div>
+     <div id="allRecords"></div>
+     <div class="formactions"><button class="btn green" id="exportCsvAll">⬇ تصدير السجلات CSV</button><button class="btn soft" id="backupBtn2">⬇ نسخة JSON احتياطية</button></div>
+    </div>
+   </section>
+  </main>
+ </div>
+</div>
+<footer class="footer">منصة الموجّه الطلابي · إعداد عبدالله عبدالرحمن الشمري · ملف مستقل للاستخدام المدرسي</footer>
+<div id="modalRoot"></div>
+<script>
+(()=>{'use strict';
+const KEY='studentGuidancePlatform_v1';
+const categories=['incidents','parents','guidance','programs','meetings','impacts','radio','attendance','support'];
+const labels={incidents:'المواقف الطارئة',parents:'تواصل أولياء الأمور',guidance:'التوجيه الفردي والجمعي',programs:'البرامج والإجراءات',meetings:'الاجتماعات واللجان',impacts:'قياس الأثر',radio:'الإذاعة المدرسية',attendance:'متابعة الغياب والسلوك',support:'حصر الطلاب وفئات الدعم'};
+const icons={incidents:'🚨',parents:'👨‍👩‍👧',guidance:'🧑‍🏫',programs:'🎯',meetings:'🤝',impacts:'📈',radio:'🎙️',attendance:'📅',support:'🧩'};
+const values=[
+['صلاتي','🕌','أداء الصلاة والمحافظة عليها.','المحافظة على الصلاة في وقتها.'],
+['قرآني','📖','الاعتزاز بالقرآن الكريم وتلاوته.','تحدي حفظ سور قصيرة.'],
+['صدقي وأمانتي','🤝','الصدق والأمانة في القول والعمل.','مواقف حياتية وتمثيل أدوار.'],
+['الرفق','💗','الرفق بالنفس والآخرين.','بطاقات عمل عن الرفق.'],
+['مدرستي جاذبة لي في التعلم','🏫','الانتماء للمدرسة وحب التعلم.','تصميم لوحة «مدرستي بيتي الثاني».'],
+['الانضباط','📋','الالتزام بالأنظمة والقوانين.','تحدي أسبوع بلا تأخر.'],
+['الإتقان','⚙️','إتقان العمل وتحقيق الجودة.','معرض «أعمالي بإتقان».'],
+['المبادرة','💡','المبادرة وحل المشكلات.','مبادرات طلابية لخدمة المدرسة.'],
+['الإيجابية','📈','النظرة الإيجابية للحياة.','حائط الإيجابية.'],
+['الانتماء للوطن','🇸🇦','حب الوطن والاعتزاز به.','أسبوع وطني مصغر.'],
+['التسامح','👥','قبول الآخر واحترامه.','قصص ومواقف عن التسامح.'],
+['المرونة','🔄','التكيف الإيجابي مع المتغيرات.','مواقف وحلول مرنة.'],
+['العزيمة','🏔️','الإصرار والمثابرة لتحقيق الأهداف.','قصص ملهمة عن العزيمة.'],
+['الوسطية','⚖️','الاعتدال والتوازن في الفكر والسلوك.','مناقشات صفية حول مواقف حياتية.'],
+['المواطنة الصالحة','👨‍👩‍👧','المسؤولية والمشاركة المجتمعية.','مبادرات لخدمة المجتمع المحلي.'],
+['المسؤولية الوطنية','🛡️','تحمل المسؤولية والعمل الجماعي.','مشاريع جماعية تعزز المسؤولية.'],
+['السمع والطاعة لولي الأمر في المعروف','👨‍👩‍👦','احترام ولي الأمر وطاعته في المعروف.','مواقف تمثيلية عن الطاعة.'],
+['الوحدة والتلاحم الوطني','🇸🇦','تعزيز الوحدة الوطنية والتلاحم.','معرض صور وإنجازات وطنية.']
+];
+let db=load();
+function blank(){return {academicYear:'1448هـ',incidents:[],parents:[],guidance:[],programs:[],meetings:[],radio:[],attendance:[],support:[],surveys:[],impacts:[],weeks:values.map((v,i)=>({week:i+1,value:v[0],start:'',date:'',done:false,notes:''}))};}
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x&&typeof x==='object'){const b=blank();b.academicYear=x.academicYear||'1448هـ';categories.forEach(k=>b[k]=Array.isArray(x[k])?x[k]:[]);b.surveys=Array.isArray(x.surveys)?x.surveys:[];b.impacts=Array.isArray(x.impacts)?x.impacts:[];b.weeks=Array.isArray(x.weeks)&&x.weeks.length===18?x.weeks:b.weeks;return b;}}catch{}return blank();}
+function persist(){db.academicYear=currentYear();let saved=true;try{localStorage.setItem(KEY,JSON.stringify(db));}catch(err){saved=false;console.error('تعذر الحفظ في التخزين المحلي',err);}renderAll();return saved;}
+function currentYear(){const sel=$('academicYear');if(!sel)return db.academicYear||'1448هـ';return sel.value==='custom'?($('customYear').value.trim()||'عام دراسي مخصص'):sel.value;}
+function applyAcademicYear(){const val=db.academicYear||'1448هـ';const sel=$('academicYear');if(!sel)return;if([...sel.options].some(o=>o.value===val)){sel.value=val;$('customYear').hidden=true;}else{sel.value='custom';$('customYear').hidden=false;$('customYear').value=val;}updateYearLabels();}
+function updateYearLabels(){const y=currentYear();$('heroYearBadge').textContent='📚 العام الدراسي '+y;$('weeklyYearBadge').textContent='18 قيمة · العام '+y;$('printReportHeading').textContent='مجمع عدي بن حاتم الطائي بعذفاء · تقارير الموجّه الطلابي · العام الدراسي '+y;document.title='منصة الموجّه الطلابي · '+y;}
+const $=id=>document.getElementById(id);
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function today(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function dayName(date){if(!date)return '';const d=new Date(date+'T12:00:00');return ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'][d.getDay()]||'';}
+function dateFields(){[['incDate','incDay'],['parDate','parDay'],['guideDate','guideDay'],['progDate','progDay'],['meetDate','meetDay'],['radioDate','radioDay'],['followStartDate','followDay'],['supportDate','supportDay']].forEach(([d,day])=>{const a=$(d),b=$(day);if(a&&b){b.value=dayName(a.value);a.onchange=()=>b.value=dayName(a.value);}});}
+function go(name){document.querySelectorAll('.nav').forEach(b=>b.classList.toggle('active',b.dataset.section===name));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id==='sec-'+name));if(name==='reports')renderReports();if(name==='surveys')renderSurveys();}
+window.go=go;
+document.querySelectorAll('.nav').forEach(b=>b.addEventListener('click',()=>go(b.dataset.section)));
+function getVal(id){return $(id).value.trim();}
+function setVal(id,v){if($(id))$(id).value=v??'';}
+function formObj(form,fields){const o={};fields.forEach(f=>o[f]=getVal(f));return o;}
+function resetForm(formId,idId){$(formId).reset();if(idId)setVal(idId,'');dateFields();}
+async function readFileAsDataURL(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=()=>reject(new Error('تعذرت قراءة الملف: '+file.name));reader.readAsDataURL(file);});}
+async function prepareAttachment(file){let dataUrl=await readFileAsDataURL(file);let name=file.name,type=file.type||'application/octet-stream';if(type.startsWith('image/')){try{const img=new Image();img.src=dataUrl;await new Promise((resolve,reject)=>{img.onload=resolve;img.onerror=reject;});const max=1280,scale=Math.min(1,max/Math.max(img.width,img.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);dataUrl=canvas.toDataURL('image/jpeg',.68);name=file.name.replace(/\.[^.]+$/,'')+'.jpg';type='image/jpeg';}catch{if(file.size>450*1024)throw new Error('تعذر ضغط الصورة. اختر صورة أصغر من 450 كيلوبايت.');}}else if(file.size>350*1024){throw new Error('حجم الملف '+file.name+' كبير. اختر ملفًا أقل من 350 كيلوبايت، أو أرفق صورة مضغوطة.');}if(dataUrl.length>650000)throw new Error('حجم الشاهد بعد المعالجة كبير. اختر ملفًا أصغر.');return {name,type,dataUrl,size:dataUrl.length,addedAt:new Date().toISOString()};}
+async function readEvidenceInput(input){if(!input||!input.files||!input.files.length)return [];if(input.files.length>3)throw new Error('يمكن إرفاق 3 ملفات كحد أقصى في كل سجل.');const out=[];for(const f of input.files)out.push(await prepareAttachment(f));return out;}
+function evidenceLinks(files){if(!files||!files.length)return '—';return files.map((f,i)=>`<a class="evidence-link" href="${f.dataUrl}" download="${esc(f.name)}" target="_blank" rel="noopener">📎 ${esc(f.name||('شاهد '+(i+1)))}</a>`).join(' ');}
+function saveRecord(category,formId,idId,fields){const form=$(formId);form.addEventListener('submit',async e=>{e.preventDefault();const submit=form.querySelector('button[type=submit]');if(submit){submit.disabled=true;submit.dataset.oldText=submit.textContent;submit.textContent='جارٍ الحفظ…';}try{const o=formObj(form,fields);o.academicYear=currentYear();const input=$(formId+'EvidenceFiles');const added=await readEvidenceInput(input);const id=getVal(idId);const existing=id?db[category].find(x=>x.id===id):null;o.evidenceFiles=added.length?([...(existing?.evidenceFiles||[]),...added]):(existing?.evidenceFiles||[]);if(id){const i=db[category].findIndex(x=>x.id===id);if(i>=0)db[category][i]={...db[category][i],...o,updatedAt:new Date().toISOString()};}else db[category].unshift({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),...o,createdAt:new Date().toISOString()});persist();resetForm(formId,idId);if(input)input.value='';}catch(err){alert(err.message||'تعذر حفظ السجل.');}finally{if(submit){submit.disabled=false;submit.textContent=submit.dataset.oldText||'حفظ';}}});form.addEventListener('reset',()=>setTimeout(()=>{setVal(idId,'');dateFields();},0));}
+saveRecord('incidents','incidentForm','incidentId',['incStudent','incClass','incDate','incDay','incType','incPriority','incDetails','incAction','incOutcome']);
+saveRecord('parents','parentForm','parentId',['parName','parStudent','parClass','parMethod','parDate','parDay','parTime','parReason','parStatus','parNotes']);
+saveRecord('guidance','guidanceForm','guideId',['guideType','guideStudents','guideClass','guideReason','guideDate','guideDay','guideTime','guideDuration','guideStatus','guideAction']);
+saveRecord('programs','programForm','programId',['progName','progType','progAudience','progDate','progDay','progBeneficiaries','progStatus','progEvidence','progOwner','progNotes']);
+saveRecord('meetings','meetingForm','meetingId',['meetCommittee','meetTitle','meetNumber','meetDate','meetDay','meetTime','meetEndTime','meetPlace','meetChair','meetAttendees','meetNotes','meetFollowup']);
+saveRecord('radio','radioForm','radioId',['radioTitle','radioTheme','radioDate','radioDay','radioStudents','radioClass','radioPresenter','radioDuration','radioStatus','radioSegments','radioNotes']);
+saveRecord('attendance','attendanceForm','followId',['followStudent','followClass','followType','followStartDate','followEndDate','followDay','followAbsences','followIncidents','followStatus','followReviewDate','followContact','followPriority','followReason','followPlan','followOutcome']);
+saveRecord('support','supportForm','supportId',['supportStudent','supportClass','supportCategory','supportDate','supportDay','supportPriority','supportSource','supportStatus','supportReviewDate','supportNeed','supportPlan','supportCoordination','supportOutcome']);
+function editRecord(cat,id){const r=db[cat].find(x=>x.id===id);if(!r)return;const map={incidents:['incidentId','incStudent','incClass','incDate','incDay','incType','incPriority','incDetails','incAction','incOutcome'],parents:['parentId','parName','parStudent','parClass','parMethod','parDate','parDay','parTime','parReason','parStatus','parNotes'],guidance:['guideId','guideType','guideStudents','guideClass','guideReason','guideDate','guideDay','guideTime','guideDuration','guideStatus','guideAction'],programs:['programId','progName','progType','progAudience','progDate','progDay','progBeneficiaries','progStatus','progEvidence','progOwner','progNotes'],meetings:['meetingId','meetCommittee','meetTitle','meetNumber','meetDate','meetDay','meetTime','meetEndTime','meetPlace','meetChair','meetAttendees','meetNotes','meetFollowup'],radio:['radioId','radioTitle','radioTheme','radioDate','radioDay','radioStudents','radioClass','radioPresenter','radioDuration','radioStatus','radioSegments','radioNotes'],attendance:['followId','followStudent','followClass','followType','followStartDate','followEndDate','followDay','followAbsences','followIncidents','followStatus','followReviewDate','followContact','followPriority','followReason','followPlan','followOutcome'],support:['supportId','supportStudent','supportClass','supportCategory','supportDate','supportDay','supportPriority','supportSource','supportStatus','supportReviewDate','supportNeed','supportPlan','supportCoordination','supportOutcome'],impacts:['impactId','impactProgram','impactIndicator','impactUnit','impactBefore','impactTarget','impactAfter','impactBeforeDate','impactAfterDate','impactCount','impactEvidence','impactNotes']};const fields=map[cat];fields.forEach((f,i)=>setVal(f,i===0?id:(r[f]??'')));const evMap={incidents:'incidentEvidenceCurrent',parents:'parentEvidenceCurrent',guidance:'guidanceEvidenceCurrent',programs:'programEvidenceCurrent',meetings:'meetingEvidenceCurrent',radio:'radioEvidenceCurrent',attendance:'attendanceEvidenceCurrent',support:'supportEvidenceCurrent',impacts:'impactEvidenceCurrent'};const ev=$(evMap[cat]||'');if(ev)ev.innerHTML=evidenceLinks(r.evidenceFiles);dateFields();go(cat==='impacts'?'surveys':cat);}
+function delRecord(cat,id){
+ try {
+  cat=String(cat||''); id=String(id||'');
+  if(!categories.includes(cat)||!Array.isArray(db[cat])){alert('تعذر تحديد القسم المطلوب.');return false;}
+  const index=db[cat].findIndex(x=>String(x.id)===id);
+  if(index<0){alert('لم يتم العثور على السجل. حدّث الصفحة وحاول مرة أخرى.');return false;}
+  if(!confirm('هل تريد حذف هذا السجل نهائيًا من هذا الجهاز؟'))return false;
+  const backup=JSON.stringify(db); db[cat].splice(index,1);
+  try{localStorage.setItem(KEY,JSON.stringify(db));}
+  catch(err){db=JSON.parse(backup);alert('تعذر حفظ الحذف في ذاكرة الجهاز؛ لم يُحذف السجل.');return false;}
+  renderAll(); return false;
+ }catch(err){console.error('delete record failed',err);alert('حدث خطأ أثناء الحذف. أعد تحميل المنصة وحاول مرة أخرى.');return false;}
+}
+function deleteRecordButton(button){if(!button)return false;return delRecord(button.getAttribute('data-cat'),button.getAttribute('data-id'));}
+window.editRecord=editRecord;window.delRecord=delRecord;window.deleteRecordButton=deleteRecordButton;
+// Robust delegated delete handler: works for rows re-created by renderAll(), including on mobile Safari.
+document.addEventListener('click',function(event){
+ const target=event.target;
+ const button=target&&target.closest?target.closest('button[data-action="delete-record"]'):null;
+ if(!button)return;
+ event.preventDefault();event.stopPropagation();
+ const cat=button.getAttribute('data-cat');
+ const id=button.getAttribute('data-id');
+ if(!cat||!id){alert('تعذر تحديد سجل الطالب. حدّث الصفحة وحاول مرة أخرى.');return;}
+ delRecord(cat,id);
+},true);
+// Use direct inline handlers on each freshly rendered row. This avoids delegated-click
+// issues in some iOS in-app file viewers and keeps the record ID bound to its own row.
+function cell(v){return esc(v||'—').replace(/\n/g,'<br>');}
+function table(cat,cols){const arr=cat==='support'?filteredSupport():db[cat];if(!arr.length)return '<div class="empty">لا توجد سجلات حتى الآن.</div>';return `<div class="tablewrap"><table><thead><tr>${cols.map(c=>`<th>${esc(c[1])}</th>`).join('')}<th>إجراءات</th></tr></thead><tbody>${arr.map(r=>`<tr>${cols.map(c=>`<td>${c[0]==='evidenceFiles'?evidenceLinks(r.evidenceFiles):cell(r[c[0]])}</td>`).join('')}<td><div class="actions"><button type="button" class="btn soft sm" onclick="window.editRecord('${esc(cat)}','${esc(r.id)}');return false;">✏️ تعديل</button><button type="button" class="btn danger sm" onclick="return window.delRecord('${cat}','${r.id}')">🗑 حذف السجل</button></div></td></tr>`).join('')}</tbody></table></div>`;}
+function renderWeeks(){const root=$('weekGrid');root.innerHTML=db.weeks.map((w,i)=>{const v=values[i];return `<div class="week ${w.done?'done':''}"><div class="weektop"><span class="wn">${i+1}</span><span class="value-icon">${v[1]}</span><h4>${esc(v[0])}</h4></div><div class="weekbody"><p>${esc(v[2])}</p><p><strong>نشاط مقترح:</strong> ${esc(v[3])}</p><div class="field"><label>بداية الأسبوع / التاريخ المقترح</label><input type="date" data-week-start="${i}" value="${esc(w.start||'')}"></div><div class="field"><label>تاريخ التنفيذ الفعلي</label><input type="date" data-week-date="${i}" value="${esc(w.date||'')}"></div><div class="field"><label>الشواهد والملاحظات</label><input data-week-notes="${i}" value="${esc(w.notes||'')}" placeholder="وصف الشاهد أو اسم الملف"></div><div class="field"><label>📎 ملف / صورة شاهد</label><input type="file" data-week-files="${i}" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple><div class="mini">${evidenceLinks(w.evidenceFiles)}</div></div><label class="check"><input type="checkbox" data-week-done="${i}" ${w.done?'checked':''}> تم تنفيذ القيمة</label></div></div>`;}).join('');}
+async function readWeeks(){try{const next=[];for(let i=0;i<db.weeks.length;i++){const w=db.weeks[i];const added=await readEvidenceInput(document.querySelector(`[data-week-files="${i}"]`));next.push({...w,start:$(`[data-week-start="${i}"]`).value,date:$(`[data-week-date="${i}"]`).value,notes:$(`[data-week-notes="${i}"]`).value,done:$(`[data-week-done="${i}"]`).checked,evidenceFiles:added.length?[...(w.evidenceFiles||[]),...added]:(w.evidenceFiles||[])});}db.weeks=next;persist();alert('تم حفظ خطة الأسابيع والشواهد.');}catch(e){alert(e.message||'تعذر حفظ الشواهد.');}}
+$('saveWeeks').onclick=readWeeks;$('resetWeeks').onclick=()=>{if(confirm('إعادة ضبط حالة التنفيذ فقط لجميع الأسابيع؟')){db.weeks=db.weeks.map(w=>({...w,done:false}));persist();}};$('exportWeeks').onclick=()=>downloadCsv('خطة_القيم_الأسبوعية.csv',[['الأسبوع','القيمة','بداية الأسبوع','تاريخ التنفيذ','تم التنفيذ','الشواهد'],...db.weeks.map((w,i)=>[i+1,w.value,w.start,w.date,w.done?'نعم':'لا',w.notes])]);
+function saveLocalSurvey(e){e.preventDefault();const questions=getVal('surveyQuestions').split(/\n+/).map(x=>x.trim()).filter(Boolean);if(!questions.length){alert('أضف سؤالًا واحدًا على الأقل.');return;}const id=getVal('surveyId');const item={academicYear:currentYear(),title:getVal('surveyTitle'),audience:getVal('surveyAudience'),mode:getVal('surveyMode'),date:getVal('surveyDate'),program:getVal('surveyProgram'),status:getVal('surveyStatus'),goal:getVal('surveyGoal'),questions};if(id){const old=db.surveys.find(x=>x.id===id);if(old)Object.assign(old,item,{updatedAt:new Date().toISOString()});}else db.surveys.unshift({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),...item,responses:[],createdAt:new Date().toISOString()});persist();$('surveyForm').reset();setVal('surveyId','');setVal('surveyDate',today());renderSurveys();}
+$('surveyForm').addEventListener('submit',saveLocalSurvey);
+$('surveyForm').addEventListener('reset',()=>setTimeout(()=>{setVal('surveyId','');setVal('surveyDate',today());},0));
+function editSurvey(id){const s=db.surveys.find(x=>x.id===id);if(!s)return;setVal('surveyId',s.id);setVal('surveyTitle',s.title);setVal('surveyAudience',s.audience);setVal('surveyMode',s.mode);setVal('surveyDate',s.date);setVal('surveyProgram',s.program);setVal('surveyStatus',s.status);setVal('surveyGoal',s.goal);setVal('surveyQuestions',(s.questions||[]).join('\n'));$('surveyForm').scrollIntoView({behavior:'smooth',block:'start'});}
+function deleteSurvey(id){const s=db.surveys.find(x=>x.id===id);if(!s)return;if(!confirm('سيُحذف الاستبيان «'+s.title+'» وجميع ردوده نهائيًا من هذا الجهاز. هل تريد المتابعة؟'))return;db.surveys=db.surveys.filter(x=>x.id!==id);persist();renderSurveys();return false;}
+function answerSurvey(id){const s=db.surveys.find(x=>x.id===id);if(!s)return;if(s.status==='مغلق'){alert('هذا الاستبيان مغلق. افتحه من حالة الاستبيان أولًا.');return;}const identity=s.mode==='named'?prompt('اكتب اسم المشارك:'):null;if(s.mode==='named'&&!identity?.trim())return;const answers=[];for(const q of s.questions){const a=prompt(q,'');if(a===null)return;answers.push({question:q,answer:a});}s.responses=s.responses||[];s.responses.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),name:s.mode==='named'?identity.trim():'',answers,date:new Date().toISOString()});persist();alert('تم حفظ الرد على هذا الجهاز.');}
+function closeModal(){const root=$('modalRoot');if(root)root.innerHTML='';}
+function showModal(content){$('modalRoot').innerHTML=`<div class="modalback" id="surveyModalBack"><div class="modal"><div class="modal-head"><h3>نتائج الاستبيان</h3><button class="modal-close" id="closeSurveyModal" type="button">إغلاق ✕</button></div>${content}</div></div>`;$('closeSurveyModal').onclick=closeModal;$('surveyModalBack').onclick=e=>{if(e.target.id==='surveyModalBack')closeModal();};}
+function showSurveyResults(id){const s=db.surveys.find(x=>x.id===id);if(!s)return;const res=s.responses||[];const counts=(s.questions||[]).map(q=>({q,answers:res.map(r=>(r.answers||[]).find(a=>a.question===q)?.answer).filter(v=>v!==undefined&&v!==null&&String(v).trim()!=='' )}));const html=`<h3>${esc(s.title)}</h3><p class="muted">الفئة: ${esc(s.audience)} · التاريخ: ${esc(s.date)} · عدد الردود: <strong>${res.length}</strong></p><div class="formactions"><button class="btn primary" type="button" onclick="exportOneSurvey('${s.id}')">⬇ تصدير هذا الاستبيان</button><button class="btn soft" type="button" onclick="printSurveyResults('${s.id}')">🖨 طباعة / PDF</button></div>${counts.map((x,i)=>`<div class="form-question" style="border:1px solid var(--line);border-radius:10px;padding:12px;margin:10px 0"><strong>${i+1}. ${esc(x.q)}</strong><p class="muted">عدد الإجابات: ${x.answers.length}</p>${x.answers.length?x.answers.map(a=>`<div class="result-row">${esc(a)}</div>`).join(''):'<p class="muted">لا توجد إجابات لهذا السؤال بعد.</p>'}</div>`).join('')}${res.length?`<h4>الردود المسجلة</h4><div class="tablewrap"><table class="results-table"><thead><tr><th>المشارك</th><th>التاريخ</th><th>الإجابات</th><th>حذف</th></tr></thead><tbody>${res.map((r,i)=>`<tr><td>${s.mode==='named'?esc(r.name||'—'):'مشارك مجهول '+(i+1)}</td><td>${esc(new Date(r.date).toLocaleString('ar-SA'))}</td><td>${(r.answers||[]).map(a=>'<div><b>'+esc(a.question)+':</b> '+esc(a.answer)+'</div>').join('')}</td><td><button class="btn danger sm" type="button" onclick="deleteSurveyResponse('${s.id}','${r.id}')">حذف الرد</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">لا توجد ردود بعد. سجّل ردًا تجريبيًا من قائمة الاستبيانات.</div>'}`;showModal(html);}
+function deleteSurveyResponse(sid,rid){if(!confirm('حذف هذا الرد نهائيًا؟'))return;const s=db.surveys.find(x=>x.id===sid);if(!s)return;s.responses=(s.responses||[]).filter(r=>r.id!==rid);persist();showSurveyResults(sid);}
+function surveyExportRows(s){const yr=s.academicYear||currentYear();const rows=[['العام الدراسي','نوع السجل','عنوان الاستبيان','الهدف','الفئة','الهوية','الحالة','التاريخ','المشارك','السؤال','الإجابة']];rows.push([yr,'تعريف الاستبيان',s.title,s.goal,s.audience,s.mode,s.status,s.date,'','','']);(s.questions||[]).forEach(q=>rows.push([yr,'سؤال',s.title,s.goal,s.audience,s.mode,s.status,s.date,'',q,'']));(s.responses||[]).forEach(r=>(r.answers||[]).forEach(a=>rows.push([yr,'رد',s.title,s.goal,s.audience,s.mode,s.status,s.date,r.name||'مجهول',a.question,a.answer])));return rows;}
+function exportOneSurvey(id){const s=db.surveys.find(x=>x.id===id);if(!s)return;downloadCsv('استبيان_'+safeFilename(s.title)+'.csv',surveyExportRows(s));}
+function safeFilename(v){return String(v||'استبيان').replace(/[\\/:*?"<>|]/g,'_').slice(0,60);}
+function printSurveyResults(id){const s=db.surveys.find(x=>x.id===id);if(!s)return;const win=window.open('','_blank');if(!win){alert('يرجى السماح بالنوافذ المنبثقة لطباعة النتائج.');return;}const body=(s.questions||[]).map((q,i)=>`<h3>${i+1}. ${esc(q)}</h3>${(s.responses||[]).map((r,j)=>{const a=(r.answers||[]).find(x=>x.question===q);return a?`<p>${s.mode==='named'?esc(r.name):'مشارك '+(j+1)}: ${esc(a.answer)}</p>`:''}).join('')}`).join('');win.document.write(`<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><title>نتائج ${esc(s.title)}</title><style>body{font-family:Tahoma,Arial;padding:28px;color:#142b43}h1{font-size:22px}h3{border-bottom:1px solid #ddd;padding-bottom:5px}p{padding:5px}</style><h1>مجمع عدي بن حاتم الطائي بعذفاء</h1><h2>نتائج الاستبيان: ${esc(s.title)}</h2><p>العام الدراسي: ${esc(currentYear())} · التاريخ: ${esc(s.date)} · عدد الردود: ${(s.responses||[]).length}</p>${body}<script>window.onload=()=>window.print()<\/script></html>`);win.document.close();}
+window.exportOneSurvey=exportOneSurvey;window.printSurveyResults=printSurveyResults;window.deleteSurveyResponse=deleteSurveyResponse;
+function renderSurveys(){const root=$('surveyList');if(!root)return;root.innerHTML=db.surveys.length?db.surveys.map(s=>`<div class="survey-item" style="border:1px solid var(--line);border-radius:12px;padding:13px;margin-bottom:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><div style="flex:1;min-width:200px"><strong>📋 ${esc(s.title)}</strong><div class="muted">${esc(s.audience)} · ${s.mode==='anonymous'?'مجهول الهوية':'بالاسم'} · ${esc(s.status)} · ${esc(s.date)}</div><div class="muted">الهدف: ${esc(s.goal)} | عدد الأسئلة: ${(s.questions||[]).length} | الردود: ${(s.responses||[]).length}</div>${s.program?'<div class="muted">البرنامج المرتبط: '+esc(s.program)+'</div>':''}</div><div class="actions" style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn primary sm" onclick="answerSurvey('${s.id}')">✍️ تسجيل رد</button><button class="btn soft sm" onclick="showSurveyResults('${s.id}')">📊 النتائج</button><button class="btn soft sm" onclick="editSurvey('${s.id}')">✏️ تعديل</button><button class="btn danger sm" onclick="return window.deleteSurvey('${s.id}')">🗑 حذف</button></div></div>`).join(''):'<div class="empty">لم تُنشئ استبيانات بعد. أنشئ أول استبيان من النموذج أعلاه.</div>';const impact=$('impactTable');impact.innerHTML=db.impacts.length?`<div class="tablewrap"><table><thead><tr><th>البرنامج</th><th>المؤشر</th><th>قبلي</th><th>مستهدف</th><th>بعدي</th><th>التغير</th><th>التوصيات</th><th>الشواهد</th><th>إجراءات</th></tr></thead><tbody>${db.impacts.map(r=>{const delta=Number(r.impactBefore)!==0?((Number(r.impactAfter)-Number(r.impactBefore))/Math.abs(Number(r.impactBefore))*100).toFixed(1)+'%':'—';return `<tr><td>${esc(r.impactProgram)}</td><td>${esc(r.impactIndicator)} (${esc(r.impactUnit)})</td><td>${esc(r.impactBefore)}</td><td>${esc(r.impactTarget)}</td><td>${esc(r.impactAfter)}</td><td>${delta}</td><td>${esc(r.impactNotes)}</td><td>${evidenceLinks(r.evidenceFiles)}</td><td><button class="btn soft sm" onclick="editRecord('impacts','${r.id}')">✏️ تعديل</button> <button class="btn danger sm" onclick="return window.deleteImpact('${r.id}')">حذف</button></td></tr>`}).join('')}</tbody></table></div>`:'<div class="empty">لا توجد قياسات أثر مسجلة بعد.</div>';}
+$('impactForm').addEventListener('submit',async e=>{e.preventDefault();const form=e.currentTarget,btn=form.querySelector('button[type=submit]');btn.disabled=true;try{const fields=['impactProgram','impactIndicator','impactUnit','impactBefore','impactTarget','impactAfter','impactBeforeDate','impactAfterDate','impactCount','impactEvidence','impactNotes'];const r=formObj(form,fields);r.academicYear=currentYear();const added=await readEvidenceInput($('impactFormEvidenceFiles'));const id=getVal('impactId');const old=id?db.impacts.find(x=>x.id===id):null;r.evidenceFiles=added.length?[...(old?.evidenceFiles||[]),...added]:(old?.evidenceFiles||[]);if(id){if(old)Object.assign(old,r,{updatedAt:new Date().toISOString()});}else db.impacts.unshift({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),...r,createdAt:new Date().toISOString()});persist();form.reset();$('impactFormEvidenceFiles').value='';setVal('impactId','');}catch(err){alert(err.message||'تعذر حفظ قياس الأثر.');}finally{btn.disabled=false;}});
+$('impactForm').addEventListener('reset',()=>setTimeout(()=>setVal('impactId',''),0));
+function deleteImpact(id){if(!confirm('حذف قياس الأثر؟'))return false;db.impacts=db.impacts.filter(x=>x.id!==id);persist();return false;}
+window.editSurvey=editSurvey;window.deleteSurvey=deleteSurvey;window.answerSurvey=answerSurvey;window.showSurveyResults=showSurveyResults;window.deleteImpact=deleteImpact;window.deleteSurveyResponse=deleteSurveyResponse;
+$('exportSurveyCsv').addEventListener('click',()=>{if(!db.surveys.length){alert('لا توجد استبيانات لتصديرها. أنشئ استبيانًا أولًا.');return;}const rows=[['العام الدراسي','نوع السجل','الاستبيان','الهدف','الفئة','الهوية','الحالة','التاريخ','المشارك','السؤال','الإجابة']];db.surveys.forEach(s=>rows.push(...surveyExportRows(s).slice(1)));downloadCsv('الاستبيانات_والردود.csv',rows);});
+function renderReports(){const q=getVal('searchAll').toLowerCase();const filter=$('filterType').value;let all=[];categories.forEach(cat=>{if(filter!=='all'&&filter!==cat)return;db[cat].forEach(r=>{const txt=JSON.stringify(r).toLowerCase();if(!q||txt.includes(q))all.push({cat,r});});});if(filter==='all'||filter==='surveys')db.surveys.forEach(r=>{const txt=JSON.stringify(r).toLowerCase();if(!q||txt.includes(q))all.push({cat:'surveys',r});});all.sort((a,b)=>String(b.r.createdAt||b.r.date||'').localeCompare(String(a.r.createdAt||a.r.date||'')));$('allRecords').innerHTML=all.length?`<div class="tablewrap"><table><thead><tr><th>القسم</th><th>التاريخ</th><th>الاسم / الموضوع</th><th>التفاصيل المختصرة</th><th>إجراء</th></tr></thead><tbody>${all.map(({cat,r})=>{const name=r.incStudent||r.parName||r.guideStudents||r.progName||r.meetTitle||r.impactProgram||r.radioTitle||r.followStudent||r.supportStudent||r.title;const date=r.incDate||r.parDate||r.guideDate||r.progDate||r.meetDate||r.impactAfterDate||r.radioDate||r.followStartDate||r.supportDate||r.date||'';const detail=r.incDetails||r.parReason||r.guideReason||r.progNotes||r.meetCommittee||r.impactIndicator||r.radioSegments||r.followReason||r.supportNeed||r.goal||'';const action=cat==='surveys'?`<button class="btn soft sm" onclick="editSurvey('${r.id}')">✏️ فتح</button> <button class="btn soft sm" onclick="showSurveyResults('${r.id}')">📊 النتائج</button>`:`<button class="btn soft sm" onclick="editRecord('${cat}','${r.id}')">✏️ فتح</button>`;return `<tr><td>${icons[cat]||'📋'} ${labels[cat]||'الاستبيانات'}</td><td>${cell(date)}</td><td>${cell(name)}</td><td>${cell(detail)}</td><td>${action}</td></tr>`;}).join('')}</tbody></table></div>`:'<div class="empty">لا توجد نتائج مطابقة.</div>';}
+$('searchAll').addEventListener('input',renderReports);$('filterType').addEventListener('change',renderReports);
+function renderRecent(){let all=[];categories.forEach(cat=>db[cat].forEach(r=>all.push({cat,r})));all.sort((a,b)=>String(b.r.createdAt||'').localeCompare(String(a.r.createdAt||'')));const recent=all.slice(0,6);$('recentList').innerHTML=recent.length?`<div class="tablewrap"><table><thead><tr><th>القسم</th><th>التاريخ</th><th>الاسم / الموضوع</th><th>ملخص</th></tr></thead><tbody>${recent.map(({cat,r})=>`<tr><td>${icons[cat]} ${labels[cat]}</td><td>${cell(r.incDate||r.parDate||r.guideDate||r.progDate||r.meetDate||r.radioDate||r.followStartDate||r.supportDate)}</td><td>${cell(r.incStudent||r.parName||r.guideStudents||r.progName||r.meetTitle||r.radioTitle||r.followStudent||r.supportStudent)}</td><td>${cell(r.incDetails||r.parReason||r.guideReason||r.progNotes||r.meetCommittee||r.impactIndicator||r.radioSegments||r.followReason||r.supportNeed)}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">لا توجد سجلات بعد. ابدأ من أحد الأقسام.</div>';}
+function filteredSupport(){const q=($('supportSearch')?.value||'').trim().toLowerCase();const f=$('supportFilter')?.value||'all';return db.support.filter(r=>(f==='all'||r.supportCategory===f)&&(!q||String(r.supportStudent||'').toLowerCase().includes(q)||String(r.supportClass||'').toLowerCase().includes(q)));}
+function renderSupportStats(){const cats=['طالب موهوب','ضعف تحصيلي / احتياج تعليمي','يتيم','ظرف أسري: سجن ولي الأمر','انفصال أسري','طالب ذو إعاقة','حالة صحية تستلزم مراعاة مدرسية','أكثر من فئة / دعم متعدد','فئة دعم أخرى'];const total=db.support.length;const cards=[['إجمالي سجلات الحصر',total,'🧩'],...cats.map((c,i)=>[c,db.support.filter(r=>r.supportCategory===c).length,['🌟','📘','💛','🏠','👨‍👩‍👧','♿','🩺','🧩','📌'][i]])];$('supportStats').innerHTML=cards.map(([label,n,icon])=>`<div class="stat"><div class="ico">${icon}</div><div><div class="n">${n}</div><small>${esc(label)}</small></div></div>`).join('');}
+$('supportSearch')?.addEventListener('input',()=>{const cols=[['supportStudent','اسم الطالب'],['supportClass','الصف'],['supportCategory','فئة الدعم'],['supportDate','تاريخ الحصر'],['supportDay','اليوم'],['supportPriority','الأولوية'],['supportStatus','حالة المتابعة'],['supportReviewDate','المراجعة القادمة'],['supportNeed','الاحتياج / نقاط القوة'],['supportPlan','خطة الدعم'],['supportCoordination','التنسيق'],['supportOutcome','النتيجة'],['evidenceFiles','الشواهد']];$('supportTable').innerHTML=table('support',cols);});
+$('supportFilter')?.addEventListener('change',()=>{$('supportSearch')?.dispatchEvent(new Event('input'));});
+function renderAll(){ $('countInc').textContent=db.incidents.length;$('countParents').textContent=db.parents.length;$('countGuidance').textContent=db.guidance.length;$('countActions').textContent=db.programs.length+db.meetings.length+db.impacts.length+db.radio.length+db.attendance.length+db.support.length; $('incidentTable').innerHTML=table('incidents',[['incStudent','اسم الطالب'],['incClass','الصف'],['incDate','التاريخ'],['incType','نوع الموقف'],['incPriority','الأولوية'],['incDetails','الموقف'],['incAction','الإجراء'],['incOutcome','النتيجة'],['evidenceFiles','الشواهد']]);$('parentTable').innerHTML=table('parents',[['parName','ولي الأمر'],['parStudent','الطالب'],['parClass','الصف'],['parMethod','وسيلة التواصل'],['parDate','التاريخ'],['parDay','اليوم'],['parTime','الوقت'],['parReason','السبب'],['parStatus','الحالة'],['parNotes','ملخص التواصل'],['evidenceFiles','الشواهد']]);$('guidanceTable').innerHTML=table('guidance',[['guideType','النوع'],['guideStudents','اسم الطالب / الطلاب'],['guideClass','الصف'],['guideReason','سبب التوجيه'],['guideDate','التاريخ'],['guideDay','اليوم'],['guideTime','الوقت'],['guideDuration','المدة'],['guideStatus','المتابعة'],['guideAction','الإجراء'],['evidenceFiles','الشواهد']]);$('programTable').innerHTML=table('programs',[['progName','اسم البرنامج'],['progType','نوع الإجراء'],['progAudience','الفئة'],['progDate','التاريخ'],['progDay','اليوم'],['progBeneficiaries','المستفيدون'],['progStatus','الحالة'],['progEvidence','الشواهد النصية'],['progOwner','المنفذ'],['progNotes','النتائج'],['evidenceFiles','المرفقات']]);$('meetingTable').innerHTML=table('meetings',[['meetCommittee','اللجنة'],['meetTitle','عنوان الاجتماع'],['meetNumber','الرقم'],['meetDate','التاريخ'],['meetDay','اليوم'],['meetTime','وقت البداية'],['meetEndTime','النهاية'],['meetPlace','المكان'],['meetChair','الرئيس'],['meetAttendees','الحضور'],['meetNotes','القرارات والتوصيات'],['meetFollowup','موعد المتابعة'],['evidenceFiles','الشواهد']]);$('radioTable').innerHTML=table('radio',[['radioTitle','موضوع الإذاعة'],['radioTheme','القيمة / المناسبة'],['radioDate','التاريخ'],['radioDay','اليوم'],['radioStudents','المشاركون'],['radioPresenter','المشرف'],['radioStatus','الحالة'],['radioSegments','الفقرات'],['radioNotes','الأثر والملاحظات'],['evidenceFiles','الشواهد']]);$('attendanceTable').innerHTML=table('attendance',[['followStudent','اسم الطالب'],['followClass','الصف'],['followType','نوع المتابعة'],['followStartDate','من تاريخ'],['followEndDate','إلى تاريخ'],['followAbsences','أيام الغياب'],['followIncidents','مرات السلوك / التأخر'],['followContact','التواصل الأسري'],['followStatus','الحالة'],['followReviewDate','موعد المراجعة'],['followReason','سبب المتابعة'],['followPlan','الخطة والإجراءات'],['followOutcome','النتيجة'],['evidenceFiles','الشواهد']]);renderSupportStats();$('supportTable').innerHTML=table('support',[['supportStudent','اسم الطالب'],['supportClass','الصف'],['supportCategory','فئة الدعم'],['supportDate','تاريخ الحصر'],['supportDay','اليوم'],['supportPriority','الأولوية'],['supportStatus','حالة المتابعة'],['supportReviewDate','المراجعة القادمة'],['supportNeed','الاحتياج / نقاط القوة'],['supportPlan','خطة الدعم'],['supportCoordination','التنسيق'],['supportOutcome','النتيجة'],['evidenceFiles','الشواهد']]);renderWeeks();renderRecent();renderSurveys();if($('sec-reports').classList.contains('active'))renderReports();}
+function download(name,content,type){const b=new Blob([content],{type});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+function downloadCsv(name,rows){const csv='\ufeff'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');download(name,csv,'text/csv;charset=utf-8');}
+function exportAllCsv(){const rows=[['العام الدراسي','القسم','التاريخ','بيانات السجل بصيغة JSON']];categories.forEach(cat=>db[cat].forEach(r=>rows.push([r.academicYear||currentYear(),labels[cat],r.incDate||r.parDate||r.guideDate||r.progDate||r.meetDate||r.impactAfterDate||r.radioDate||r.followStartDate||r.supportDate||'',JSON.stringify(r)])));db.surveys.forEach(r=>rows.push([r.academicYear||currentYear(),'الاستبيانات',r.date,JSON.stringify(r)]));downloadCsv('سجلات_التوجيه_الطلابي.csv',rows);}
+function backup(){db.academicYear=currentYear();download('نسخة_احتياطية_منصة_الموجه_الطلابي_'+safeFilename(currentYear())+'.json',JSON.stringify({version:2,exportedAt:new Date().toISOString(),data:db},null,2),'application/json;charset=utf-8');}
+$('backupBtn').onclick=backup;$('backupBtn2').onclick=backup;$('exportCsvAll').onclick=exportAllCsv;$('printBtn').onclick=()=>window.print();
+$('restoreBtn').onclick=()=>$('restoreFile').click();$('restoreFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const parsed=JSON.parse(await file.text());const d=parsed.data||parsed;if(!d||!Array.isArray(d.incidents)||!Array.isArray(d.weeks))throw new Error('صيغة الملف غير متوافقة.');if(!confirm('ستُستبدل السجلات الحالية بمحتوى النسخة الاحتياطية. هل تريد المتابعة؟'))return;db=d;persist();alert('تمت استعادة النسخة الاحتياطية.');}catch(err){alert('تعذرت الاستعادة: '+err.message);}finally{e.target.value='';}};
+$('academicYear').addEventListener('change',()=>{const custom=$('academicYear').value==='custom';$('customYear').hidden=!custom;if(custom)$('customYear').focus();db.academicYear=currentYear();localStorage.setItem(KEY,JSON.stringify(db));updateYearLabels();});$('customYear').addEventListener('input',()=>{db.academicYear=currentYear();localStorage.setItem(KEY,JSON.stringify(db));updateYearLabels();});$('printReportsBtn').addEventListener('click',()=>{updateYearLabels();window.print();});$('exportReportsPdfHelp').addEventListener('click',()=>alert('للحفظ بصيغة PDF: اضغط «طباعة / حفظ PDF»، ثم اختر «حفظ بصيغة PDF» من خيارات الطباعة في الجهاز أو المتصفح.'));applyAcademicYear();setVal('surveyDate',today());dateFields();[['incDate','incDay'],['parDate','parDay'],['guideDate','guideDay'],['progDate','progDay'],['meetDate','meetDay'],['radioDate','radioDay'],['followStartDate','followDay'],['supportDate','supportDay']].forEach(([d])=>{if($(d))$(d).value=today();});dateFields();renderAll();
+})();
+</script>
+</body></html>
